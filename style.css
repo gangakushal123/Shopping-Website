@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  #heading{
+    font-size:30px;
+  }
+  #cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 1550px;
+    height: 1500px;
+    border: 2px solid black;
+    padding: 10px 30px;
+    #card {
+      width: 200px;
+      height: 380px;
+      padding: 5px 5px;
+      border-radius: 10px;
+      box-shadow: 2px 3px 15px rgb(187, 184, 184);
+
+      #cardimg {
+        img {
+          border: 1px solid black;
+          height: 250px;
+          width: 200px;
+          border-radius: 10px;
+        }
+      }
+      #title {
+        font-size: 20px;
+        color: grey;
+      }
+      #pricing {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        padding: 0px 10px;
+        gap: 5px;
+        #price {
+          font-size: 20px;
+          font-weight: bold;
+        }
+        #title_1 {
+          color: grey;
+        }
+      }
+      #delivery {
+        padding: 10px 10px;
+      }
+      #ratings {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        padding: 0px 5px;
+        gap: 10px;
+        #rating_1 {
+          background-color: green;
+          color: white;
+          padding: 5px 5px;
+          border-radius: 15px;
+        }
+        #rating_2 {
+          font-size: 15px;
+          color: grey;
+        }
+      }
+    }
+  }
+}
